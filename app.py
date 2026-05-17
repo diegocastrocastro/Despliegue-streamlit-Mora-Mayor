@@ -43,17 +43,17 @@ with open(output, "rb") as f:
 
 import streamlit as st
 
-st.title('Predicción de entrada de Mora Mayor')
+st.title('Predicción de entrada en Mora Mayor')
 
-EDAD = st.slider('EDAD', min_value=18, max_value=84, value=18, step=1)
-NUMERO_HIJOS = st.slider('NUMERO_HIJOS', min_value=0, max_value=20, value=0, stpe=2)
+EDAD = st.slider('EDAD', min_value=18, max_value=84, value=30, step=1)
+NUMERO_HIJOS = st.slider('NUMERO_HIJOS', min_value=0, max_value=20, value=0, stpe=1)
 ESTRATO = st.selectbox('ESTRATO', ['1','2', '3','4','5','6'])
 TIPO_VIVIENDA = st.selectbox('TIPO_VIVIENDA', ['FAMILIAR', 'PROPIA','ALQUILADA','ASIGNADA POR LA EMPRESA'])
 IND_NAR = st.selectbox('IND_NAR', ['Antiguo', 'Nuevo', 'Recuperado', 'Nuevoe'])
 NOTA = st.selectbox('NOTA', ['1', '2', '3', '4', '5' ])
-NIVEL_INGRESOS_ACTUAL = st.slider('NIVEL_INGRESOS_ACTUAL', min_value=128571, max_value=50000000, value=128571 , step=7)
+NIVEL_INGRESOS_ACTUAL = st.slider('NIVEL_INGRESOS_ACTUAL', min_value=128571, max_value=50000000, value=128571 , step=10000)
 IND_AGRO = st.selectbox('IND_AGRO', ['0', '1'])
-MONTO_DESEMBOLSADO = st.slider('MONTO_DESEMBOLSADO', min_value=11646, max_value=641500000, value=11646 , step=9)
+MONTO_DESEMBOLSADO = st.slider('MONTO_DESEMBOLSADO', min_value=11646, max_value=641500000, value=11646 , step=10000)
 
 
 
