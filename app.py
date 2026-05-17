@@ -31,7 +31,7 @@ gdown.download(url, output, quiet=False)
 
 # Cargar el modelo
 with open(output, "rb") as f:
-    model_rf, labelencoder, variables, min_max_scaler = pickle.load(f)
+    modelo_rf, labelencoder, variables, min_max_scaler = pickle.load(f)
 
 # Se cargan los datos
 #data = pd.read_csv("BD_MORA_MAYOR_FUTUROS.csv") #Cargar datos
