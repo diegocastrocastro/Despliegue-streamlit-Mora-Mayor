@@ -46,7 +46,7 @@ import streamlit as st
 st.title('Predicción de entrada en Mora Mayor')
 
 EDAD = st.slider('EDAD', min_value=18, max_value=84, value=30, step=1)
-NUMERO_HIJOS = st.slider('NUMERO_HIJOS', min_value=0, max_value=20, value=0, stpe=1)
+NUMERO_HIJOS = st.slider('NUMERO_HIJOS', min_value=0, max_value=20, value=0, step=1)
 ESTRATO = st.selectbox('ESTRATO', ['1','2', '3','4','5','6'])
 TIPO_VIVIENDA = st.selectbox('TIPO_VIVIENDA', ['FAMILIAR', 'PROPIA','ALQUILADA','ASIGNADA POR LA EMPRESA'])
 IND_NAR = st.selectbox('IND_NAR', ['Antiguo', 'Nuevo', 'Recuperado', 'Nuevoe'])
