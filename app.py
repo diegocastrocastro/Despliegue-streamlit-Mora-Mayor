@@ -90,4 +90,4 @@ data.head()
 data
 
 #Recordar medida de error del modelo
-st.warning("El modelo tiene un error del 11% (mape: error porcentual)")
+st.warning("El modelo tiene un error del 11% , Porcentaje de error calculado Accuracy")
